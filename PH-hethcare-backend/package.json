@@ -2,6 +2,7 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
+    "better-auth": "^1.6.9",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "pg": "^8.20.0",
@@ -13,12 +14,12 @@
     "build": "tsx",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint ./src/**/*",
-    "migrate":"prisma migrate dev",
-    "generate":"prisma generate",
-    "studio":"prisma studio --browser none",
-    "push":"prisma db push",
-    "pull":"prisma db pull",
-    "test":"echo \"Error: no test specified\" && exit 1"
+    "migrate": "prisma migrate dev",
+    "generate": "prisma generate",
+    "studio": "prisma studio --browser none",
+    "push": "prisma db push",
+    "pull": "prisma db pull",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
