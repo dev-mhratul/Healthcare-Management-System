@@ -17,7 +17,7 @@ app.use('/api/v1', IndexRoutes)
 app.get('/', async (req: Request, res: Response) => {
   const specialityData = await prisma.speciality.create({
     data:{
-      title: 'Cardioogy2'
+      title: 'Cardioogy3'
     }
   })
   res.status(201).json({

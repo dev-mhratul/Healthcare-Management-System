@@ -1,0 +1,24 @@
+import { Request, Response } from "express";
+import { catchAsync } from "../../shared/catchAsync";
+import { sendResponse } from "../../shared/sendResponse";
+import { AuthService } from "./auth.service";
+
+
+const registerPatientController = catchAsync(
+    async (req: Request, res: Response) => {
+        const payload = req.body;
+
+        const result = await AuthService.registerPatient(payload);
+
+        sendResponse(res, {
+            httpStatuscode: 201,
+            success: true,
+            message: "Patient registered successfully",
+            data: result,
+        });
+    }
+)
+
+export const AuthController = {
+    registerPatientController,
+}

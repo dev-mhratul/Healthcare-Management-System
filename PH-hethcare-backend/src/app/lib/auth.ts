@@ -43,4 +43,9 @@ export const auth = betterAuth({
             
         },
     },
+
+    // trustedOrigins: [process.env.BATTER_AUTH_URL ||  "http://localhost:5000"],
+    // advanced:{
+    //     disableCSRFCheck: true,
+    // }
 });
